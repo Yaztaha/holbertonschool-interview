@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Minimum operation """
 
+
 def minOperations(n):
     """ minimum operation function """
     if n < 2 or type(n) is not int:
