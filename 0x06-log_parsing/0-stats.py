@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ log steeam parsing by line  """
-
 import sys
 
 dict_codes = {'200': 0, '301': 0, '400': 0, '401': 0,
