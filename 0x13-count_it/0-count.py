@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-
-"""Reddit Api"""
-
+""" Reddit hot article word count """
 import requests
 
 
 def count_words(subreddit, word_list, after='', words_counting={}):
-    """parses the title of all hot articles, and prints
-    a sorted count of given keywords"""
+    """ Word counting function """
 
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {'User-Agent': 'python3:holberton.task:v1.0'}
+    headers = {'User-Agent': 'custom'}
     payload = {'limit': '100', 'after': after}
     response = requests.get(url, headers=headers,
                             params=payload, allow_redirects=False)
